@@ -1,1 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>plixy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: radial-gradient(circle at top left, #2b2b3d, #1e1e2f);
+      color: #f0f0f0;
+    }
+    nav {
+      position: sticky;
+      top: 0;
+      background-color: #2a2a3a;
+      padding: 1rem 2rem;
+      z-index: 1000;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+    }
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 900px;
+      margin: auto;
+    }
+    .logo {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #ffffff;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    .nav-links li a {
+      color: #f0f0f0;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+    .nav-links li a:hover {
+      color: #6d6c6a;
+    }
+    header {
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+      background: linear-gradient(to right, #3b3b5c, #2a2a3a);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    }
+    header h1 {
+      font-size: 3.5rem;
+      margin-bottom: 0.5rem;
+      color: #ffffff;
+    }
+    header p {
+      font-size: 1.3rem;
+      color: #ddd;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 2rem;
+      padding: 2rem;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background-color: #2a2a3a;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+    }
+    .card h2 {
+      color: #ffffff;
+      margin-bottom: 1rem;
+    }
+    .code-box {
+      background-color: #1b1b1b;
+      padding: 1rem;
+      border-radius: 8px;
+      font-family: monospace;
+      white-space: pre-wrap;
+      overflow-x: auto;
+      color: #00ffcc;
+    }
+    .download-btn {
+      background-color: #3b3a3a;
+      color: #ffffff;
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin-top: 1rem;
+      display: inline-block;
+    }
+    .download-btn:hover {
+      background-color: #797978;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    a {
+      color: #7a7974;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="nav-container">
+      <div class="logo">plixy</div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#sample">Sample</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#start">Get Started</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+    </div>
+  </nav>
 
+  <header>
+    <h1>plixy</h1>
+    <p>A joyful scripting language built in Python</p>
+  </header>
+
+  <div class="container">
+    <div class="card" id="about">
+      <h2>✨ What is plixy?</h2>
+      <p>plixy is a modular, branded scripting language designed for creative coding, playful invention, and frictionless onboarding. Built entirely in Python, it empowers users to build interpreters, apps, and tools with elegance and delight.</p>
+    </div>
+
+    <div class="card" id="sample">
+      <h2>🚀 Try a Sample Script</h2>
+      <h2>window script</h2>
+      <div class="code-box">
+        <h1>
+       let window.run.window.play = blank 
+       local title = "title" of window.run
+<h1>
+
+      </div>
+    </div>
+
+    <div class="card" id="features">
+      <h2>🛠 Features</h2>
+      <ul>
+        <li>Single-file interpreter with branded UI</li>
+        <li>Custom syntax and playful semantics</li>
+        <li>Instant feedback and error handling</li>
+        <li>Perfect for creative tools and app stores</li>
+      </ul>
+    </div>
+
+    <div class="card" id="start">
+      <h2>📦 Get Started</h2>
+      <p>Clone the repo and run your first Plenix script:</p>
+      <div class="code-box">
+        <br>
+        https://freezyvr567.itch.io/plixy
+ <br>
+python main.py demo.plx
+      </div>
+    </div>
+
+    <div class="card" id="download">
+      <h2>🖥 Download plixy</h2>
+      <p>Get the latest Windows executable and start scripting instantly:</p>
+      <a href="https://freezyvr567.itch.io/plixy" download>
+        <button class="download-btn">⬇ Download plixy.exe</button>
+      </a>
+    </div>
+  </div>
+
+  <footer>
+    Made with ❤️ by another click<br>
+    <a href="#">GitHub</a> • <a href="#">Docs</a> • <a href="#">Community</a>
+  </footer>
+</a>
+</body>
+</html>
